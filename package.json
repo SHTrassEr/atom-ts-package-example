@@ -1,0 +1,20 @@
+{
+  "name": "atom-typescript-package-example",
+  "main": "./lib/plugin.js",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationEvents": ["ts-package-example:toggle"],
+  "repository": "https://github.com/SHTrassEr/atom-typescript-package-example",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "typescript": "~1.0.1",
+    "grunt-ts": "~1.11.3",
+    "tsd": "~0.5.7",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

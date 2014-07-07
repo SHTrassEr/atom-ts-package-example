@@ -1,0 +1,9 @@
+.*
+!.gitignore
+npm-debug.log
+node_modules
+tscommand.tmp.txt
+bin
+build/*
+lib/*
+src/typings/*

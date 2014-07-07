@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable ts-package-example': 'ts-package-example:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Enable ts-package-example'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'ts-package-example:toggle' }
+      ]
+    ]
+  }
+]
