@@ -21,7 +21,7 @@ export class PluginView extends a.View {
     console.log("PluginView was toggled!");
 
     if (this.jQuery.hasParent()) {
-      this.detach();
+      this.jQuery.detach();
     } else {
       atom.workspaceView.appendToTop(this);
     }
