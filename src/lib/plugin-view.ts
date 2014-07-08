@@ -13,8 +13,8 @@ export class PluginView extends a.View {
   }
 
   public static content() {
-    return PluginView.div({class: "atom-ts-package-example overlay from-top"}, () =>
-    PluginView.div("Yo"));
+    return this.div({class: "atom-ts-package-example overlay from-top"}, () =>
+    this.div("Yo"));
   }
 
   public toggle() {
