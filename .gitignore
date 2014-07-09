@@ -3,7 +3,7 @@
 npm-debug.log
 node_modules
 tscommand.tmp.txt
-bin
+/bin
 /build
 /lib
-src/typings/*
+/src/typings
