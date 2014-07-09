@@ -1,8 +1,8 @@
 /// <reference path='../typings/atom/atom.d.ts' />
 
-import p = require('./plugin-view-base');
+import PluginViewBase = require('./plugin-view-base');
 
-export class PluginView extends p.PluginViewBase {
+class PluginView extends PluginViewBase {
 
   constructor(state) {
     super(state);
@@ -24,3 +24,5 @@ export class PluginView extends p.PluginViewBase {
     }
   }
 }
+
+export = PluginView;

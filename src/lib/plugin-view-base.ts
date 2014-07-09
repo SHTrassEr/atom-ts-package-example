@@ -2,7 +2,7 @@
 
 import atomModule = require('atom');
 
-export class PluginViewBase extends atomModule.View {
+class PluginViewBase extends atomModule.View {
 
   public jQuery: JQuery;
 
@@ -10,5 +10,6 @@ export class PluginViewBase extends atomModule.View {
     super(state);
     this.jQuery = <JQuery><any>this;
   }
-  
 }
+
+export = PluginViewBase;
