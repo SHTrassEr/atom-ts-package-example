@@ -1,7 +1,7 @@
 /// <reference path='../typings/atom/atom.d.ts' />
 /// <reference path='plugin-view.ts' />
 
-import a = require('./plugin-view');
+import p = require('./plugin-view');
 
 export class PluginExample {
 
@@ -9,10 +9,10 @@ export class PluginExample {
     configParameter: true
   };
 
-  private pluginView: a.PluginView;
+  private pluginView: p.PluginView;
 
   activate(state) {
-    this.pluginView = new a.PluginView(state);
+    this.pluginView = new p.PluginView(state);
   }
 
   deactivate() {

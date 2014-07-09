@@ -3,7 +3,7 @@
 ## Quickstart
 
     npm install --save-dev
-    cd src && ../node_modules/.bin/tsd query atom --resolve --overwrite --save --action install
+    cd src &&  ../node_modules/.bin/tsd update -so
     grunt
 
 You must then copy the folder into your .atom/packages directory, or run:

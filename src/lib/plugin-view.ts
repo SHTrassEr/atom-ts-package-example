@@ -1,27 +1,24 @@
 /// <reference path='../typings/atom/atom.d.ts' />
 
-import a = require('atom');
+import p = require('./plugin-view-base');
 
-export class PluginView extends a.View {
-
-  private jQuery: JQuery;
+export class PluginView extends p.PluginViewBase {
 
   constructor(state) {
     super(state);
     atom.workspaceView.command("ts-package-example:toggle", () => this.toggle());
-    this.jQuery = <JQuery><any>this;
   }
 
   public static content() {
     return this.div({class: "atom-ts-package-example overlay from-top"}, () =>
-    this.div("Yo"));
+    this.div("Yo!"));
   }
 
   public toggle() {
     console.log("PluginView was toggled!");
 
-    if (this.jQuery.hasParent()) {
-      this.jQuery.detach();
+    if (this.hasParent()) {
+      this.detach();
     } else {
       atom.workspaceView.appendToTop(this);
     }
