@@ -4,11 +4,11 @@ import atomModule = require('atom');
 
 export class PluginViewBase extends atomModule.View {
 
-  public hasParent() {
-    return (<JQuery><any>this).hasParent();
-  }
+  public jQuery: JQuery;
 
-  public detach() {
-    return (<JQuery><any>this).detach();
+  constructor(state) {
+    super(state);
+    this.jQuery = <JQuery><any>this;
   }
+  
 }
