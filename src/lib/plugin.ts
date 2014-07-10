@@ -1,7 +1,6 @@
 /// <reference path='../typings/atom/atom.d.ts' />
-/// <reference path='plugin-view.ts' />
 
-import PluginView = require('./plugin-view');
+import PluginView = require('./view/plugin-view');
 
 export class PluginExample {
 

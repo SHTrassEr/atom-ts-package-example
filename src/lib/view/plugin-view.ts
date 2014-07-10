@@ -1,4 +1,3 @@
-/// <reference path='../typings/atom/atom.d.ts' />
 
 import PluginViewBase = require('./plugin-view-base');
 

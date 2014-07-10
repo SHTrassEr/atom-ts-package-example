@@ -1,4 +1,4 @@
-/// <reference path='../typings/atom/atom.d.ts' />
+/// <reference path='../../typings/atom/atom.d.ts' />
 
 import atomModule = require('atom');
 
